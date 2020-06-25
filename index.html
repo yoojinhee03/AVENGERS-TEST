@@ -7,22 +7,31 @@
 	<style>
 		@import url("css/index.css");
 	</style>
+	<!-- 폰트적용 -->
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 	<script src="js/index.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="over">
-			<div class="title" onclick="init()">
+		<div class="over" id="over">
+			<div class="title" onclick="init();over();">
 				<div style="font-size: 13rem; float:left; margin-top: -36px; margin-right: -40px">A</div>
 				<div style="font-size: 2.2rem;">나의 어벤져스상은?</div>VENGERS
 			</div>
 		</div>
-		<!-- <button type="button" onclick="init()">Start</button> -->
-		<div id="webcam-container"></div>
-		<!-- 카메라 -->
-		<div id="label-container"></div>
+		<div class="container">
+			<div class="wrapper" id="wrapper">
+				<div id="webcam-container"></div>
+				<div id="image-container" style="display:none"></div>
+				<!-- 카메라 -->
+				<div id="label-container"></div>
+				<div class="button">
+					<input type="button" id="stop" value="멈추기" onclick="stop()">
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

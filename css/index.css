@@ -3,19 +3,33 @@ body, html {
     padding: 0;
     height: 100%;
 }
-.font-face{
-	font-family: 'a로케트';
-	src:url(./fonts/a로케트.ttf) format('truetype');
-}
-.wrapper{
+
+/*
+@font-face{ 
+	font-family:'NanumGothic'; 
+	src:url('./fonts/NanumGothic.eot'); 
+	src:url('./fonts/NanumGothic.eot?#iefix') format(‘embedded-opentype’), url('./fonts/NanumGothic.woff') format(‘woff’), url('./fonts/NanumGothic.ttf') format('truetype'), url('./fonts/NanumGothic.svg') format('svg'); 
+}*/
+@font-face{ font-family:ng; src:url(a로케트.eot); src:local(※), url(a로케트.woff) format(‘woff’) }
+
+
+/*.wrapper{
 	min-height: 100%;
 	background-position: center;
 	background-image: url("../images/background_avengers.jpg");
     background-repeat : no-repeat;
     background-size : cover;
 
+}*/
+.wrapper{
+	overflow: auto;
 }
 .over{
+	min-height: 100%;
+	background-position: center;
+	background-image: url("../images/background_avengers.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
 	width: 100%;
     height: 100%;
     /* background-color: #000000;
@@ -37,4 +51,55 @@ body, html {
 }
 .title:after{ 
 	content:""; clear:both; display:block;
+}
+#stop{
+	z-index: 1;
+}
+/*결과*/
+
+.container{
+	text-align:  center;
+	width:1000px;
+	margin:70px auto 0 auto;
+	/*border: 1px solid gray;*/
+	border-radius: 15px;
+	background-color: #f6f7fa;
+}
+#webcam-container,#image-container{
+	display: inline-block;
+	border-radius: 20px;
+	width:400px;
+	height: 400px;
+	overflow: hidden;
+}
+
+#image-container>img{
+	width:100%;
+	height:auto;
+}
+#image-container>img,#webcam-container>canvas{
+	border-radius: 20px;
+}
+.container>.wrapper{
+	display: inline-block;
+	margin-top:40px;
+	width:400px;
+	
+}
+.button{
+	height: 60px;
+	margin-top:15px;
+	margin-bottom:15px;
+
+}
+.button>input{
+	width:95%;
+	height: 100%;
+	border-radius: 15px;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #ffffff;
+	border: 1px solid #f6f7fa;
+	font-size: 1.5rem;
 }
