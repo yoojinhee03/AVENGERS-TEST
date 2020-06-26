@@ -4,25 +4,13 @@ body, html {
     height: 100%;
 }
 
-/*
-@font-face{ 
-	font-family:'NanumGothic'; 
-	src:url('./fonts/NanumGothic.eot'); 
-	src:url('./fonts/NanumGothic.eot?#iefix') format(‘embedded-opentype’), url('./fonts/NanumGothic.woff') format(‘woff’), url('./fonts/NanumGothic.ttf') format('truetype'), url('./fonts/NanumGothic.svg') format('svg'); 
-}*/
-@font-face{ font-family:ng; src:url(a로케트.eot); src:local(※), url(a로케트.woff) format(‘woff’) }
-
-
-/*.wrapper{
-	min-height: 100%;
-	background-position: center;
-	background-image: url("../images/background_avengers.jpg");
-    background-repeat : no-repeat;
-    background-size : cover;
-
-}*/
 .wrapper{
 	overflow: auto;
+}
+.container>.title{
+	text-align: center;
+	font-family: 'Jua', sans-serif;
+	font-size:3.2rem;
 }
 .over{
 	min-height: 100%;
@@ -38,13 +26,16 @@ body, html {
     position:absolute;
 }
 .over>.title{
-	margin:300px auto 0 auto;
+	margin:240px auto 0 auto;
 	width: 780px;
 	text-align: center;
 	opacity: 0.8;
-	font-family: 'a로케트';
-	font-size: 8rem;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 12rem;
 	color: #ffffff;
+}
+.over>.title:first-letter{
+	font-size: 18rem;  
 }
 .over>.title:hover{
 	opacity: 1;
@@ -102,4 +93,15 @@ body, html {
 	color: #ffffff;
 	border: 1px solid #f6f7fa;
 	font-size: 1.5rem;
+	font-family: 'Jua', sans-serif;
+
+}
+#name{
+	font-size: 2rem;
+	font-family: 'Jua', sans-serif;
+}
+#resultText{
+	margin-top:20px;
+	font-size: 1.6rem;
+	font-family: 'Jua', sans-serif;
 }
