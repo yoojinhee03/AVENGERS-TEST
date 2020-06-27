@@ -105,3 +105,22 @@ body, html {
 	font-size: 1.6rem;
 	font-family: 'Jua', sans-serif;
 }
+
+.loader{
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 8em auto 1em;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #FF6700;
+}

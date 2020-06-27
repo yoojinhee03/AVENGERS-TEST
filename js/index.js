@@ -52,6 +52,8 @@
         const flip = true; // whether to flip the webcam
         webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
         await webcam.setup(); // request access to the webcam
+        document.getElementById("loader").style.display="none";
+        document.getElementById("button").style.display="block";
         await webcam.play();
         window.requestAnimationFrame(loop);
 
@@ -65,7 +67,7 @@
         // }
     }
     async function stop(){
-        await webcam.pause(); // update the webcam frame
+        await webcam.pause(); 
         document.getElementById("label-container").style.display="block";
         await predict();
         changeButton("stop","replay");
@@ -114,7 +116,7 @@
         imageContainer.style.display="inline-block";
         imageContainer.appendChild(document.createElement("img"));
         document.getElementById("wrapper").style.width="850px";
-        imageContainer.childNodes[0].src="./images/"+images[index];
+        imageContainer.childNodes[1].src="./images/"+images[index];
     }
     function over(){
         document.getElementById("over").style.display="none";
