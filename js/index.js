@@ -69,6 +69,7 @@
     async function stop(){
         await webcam.pause(); 
         document.getElementById("label-container").style.display="block";
+        document.getElementById("sns-container").style.display="block";
         await predict();
         changeButton("stop","replay");
     }
@@ -76,6 +77,7 @@
     async function replay(){
         await webcam.play(); // request access to the webcam
         document.getElementById("label-container").style.display="none";
+        document.getElementById("sns-container").style.display="none";
         window.requestAnimationFrame(loop);
         changeButton("replay","stop");
     }

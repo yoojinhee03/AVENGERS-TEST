@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>어벤져스상 테스트</title>
 	<style>
+
+		@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 		@import url("css/index.css");
 	</style>
 	<!-- 폰트적용 -->
@@ -49,9 +51,19 @@
 				</div>
 				<!-- 카메라 -->
 				<div id="label-container"></div>
-				<div class="button" id="button" style="display:none">
+				  <div id="sns-container" style="display:none">
+				    <a class="sns_btn btn_facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://avengers-test.netlify.app/')" rel="author">
+				      <i class="fa fa-facebook"></i>
+				    </a>
+				    <a class="sns_btn btn_twitter" onclick="window.open('https://twitter.com/intent/tweet?text=어벤져스상 테스트&url=https://avengers-test.netlify.app/')" rel="author">
+				      <i class="fa fa-twitter"></i>
+				    </a>
+				  </div>
+				  <div class="button" id="button" style="display:none">
 					<input type="button" id="stop" value="멈추기"  onclick="stop()">
 				</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>

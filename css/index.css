@@ -48,7 +48,7 @@ body, html {
 }
 /*결과*/
 
-.container{
+.wrapper>.container{
 	text-align:  center;
 	width:1000px;
 	margin:70px auto 0 auto;
@@ -124,3 +124,70 @@ svg path,
 svg rect{
   fill: #FF6700;
 }
+
+/*
+sns
+*/
+
+/*$googleplus_color: #dd4b39;
+$facebook_color: #3b5998;
+$twitter_color: #55acee;*/
+
+#sns-container {
+  margin-top:20px;
+}
+
+.sns_btn {
+  display: inline-block;
+  color: #fff;
+  height: 3em;
+  width: 3em;
+  position: relative;
+  /*// text-align: center;*/
+  /*// clear:both;*/
+  /*// white-space:nowrap;*/
+  font-size: 1.5em;
+  border-radius: 0.3125em;
+  box-shadow: 0 0.1875em 0.3125em 0 rgba(0, 0, 0, 0.35);
+  margin:0.2em;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  
+}
+
+.sns_btn>i{
+	position: absolute;
+    /*// top: 50%;*/
+    /*// transform: translateY(-50%);*/
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+}
+.sns_btn:hover{
+		transform: scale(1.2);
+    box-shadow: 0 0.3125em 0.9375em 0 rgba(0, 0, 0, 0.4);
+}
+.sns_btn:active{
+transform: scale(0.9);
+    box-shadow: 0 0.125em 0.1875em 0 rgba(0, 0, 0, 0.4);
+}
+.btn_facebook {
+  background: #3b5998;
+}
+.btn_facebook:hover{
+	 color: #3b5998;
+    background: #fff;
+}
+
+.btn_twitter {
+  background: #55acee;
+ }
+
+.btn_twitter:hover{
+	color: #55acee;
+	background: #fff;
+}
+
