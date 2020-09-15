@@ -1,7 +1,5 @@
 # AVENGERS-TEST
 
-https://avengers-test.netlify.app/
-
 ### 🛠️보완할 점
 * 코드 정리
 * 이미지 모델 추가
